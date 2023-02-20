@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% load compress %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% compress css %}
+        <link type="text/x-scss" href="{% static 'styles/base.scss' %}" rel="stylesheet" media="screen">
+    {% endcompress %}
+    <title>Imani Mwamlima</title>
+</head>
+<body>
+    <header>
+        <div class="title">Imani Mwamlima</div>
+        <div class="nav">
+            <p>Resume</p>
+            <p>Contact</p>
+        </div>
+    </header>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

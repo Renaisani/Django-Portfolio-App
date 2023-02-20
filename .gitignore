@@ -1,2 +1,4 @@
 djangoenv/
 .env
+db.sqlite3
+djangoPortfolioApp/static/
