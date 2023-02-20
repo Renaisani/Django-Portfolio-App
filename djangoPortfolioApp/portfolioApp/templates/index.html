@@ -1,4 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>This is the home page</h1>
+{% load static %}
+
+<section class="home">
+    <div class="profile-img">
+        <img src="{% static 'assets/profile-img.JPEG' %}" alt="Profile Photo">
+    </div>
+    <div class="profile-text">
+        <div class="text-box">
+            <p>Technical creative with 8+ years of experience in photography, project management, and digital asset organization. Seeking to grow more in the tech field and apply 2+ years of extensive experience in programming to create amazing products for End Users.</p>
+        </div>
+    </div>
+</section>
+
+<hr>
+
 {% endblock %}

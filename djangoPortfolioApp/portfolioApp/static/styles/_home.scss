@@ -1,0 +1,27 @@
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-img {
+    img {
+        width: 500px;
+        padding-left: 130px;
+        padding-top: 50px;
+    }
+}
+
+.profile-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box {
+    width: 650px;
+    height: 380px;
+    p {
+        font-size: 30px;
+        line-height: 2.4rem;
+    }
+}
