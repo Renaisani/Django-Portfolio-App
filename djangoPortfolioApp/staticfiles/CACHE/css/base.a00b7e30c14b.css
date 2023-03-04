@@ -1,0 +1,68 @@
+/* line 1, portfolioApp/static/styles/_global.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif; }
+
+/* line 7, portfolioApp/static/styles/_global.scss */
+header {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr; }
+
+/* line 12, portfolioApp/static/styles/_global.scss */
+.title {
+  font-size: 100px;
+  padding-top: 5px;
+  padding-left: 25px;
+  font-weight: 700; }
+
+/* line 19, portfolioApp/static/styles/_global.scss */
+.nav {
+  display: flex; }
+  /* line 21, portfolioApp/static/styles/_global.scss */
+  .nav :first-child {
+    margin: 0 0 20px 30px; }
+  /* line 24, portfolioApp/static/styles/_global.scss */
+  .nav :nth-child(2) {
+    margin: 0 30px 20px 100px; }
+  /* line 27, portfolioApp/static/styles/_global.scss */
+  .nav p {
+    font-size: 25px;
+    display: inline-flex;
+    align-items: flex-end; }
+
+/* line 1, portfolioApp/static/styles/_home.scss */
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+/* line 7, portfolioApp/static/styles/_home.scss */
+.profile-img img {
+  width: 500px;
+  padding-left: 130px;
+  padding-top: 50px; }
+
+/* line 14, portfolioApp/static/styles/_home.scss */
+.profile-text {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 20, portfolioApp/static/styles/_home.scss */
+.text-box {
+  width: 650px;
+  height: 380px; }
+  /* line 23, portfolioApp/static/styles/_home.scss */
+  .text-box p {
+    font-size: 30px;
+    line-height: 2.4rem; }
+
+/* line 29, portfolioApp/static/styles/_home.scss */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+/* line 34, portfolioApp/static/styles/_home.scss */
+.project-card {
+  width: 80vw;
+  justify-content: center; }

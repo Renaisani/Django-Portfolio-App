@@ -25,3 +25,50 @@
         line-height: 2.4rem;
     }
 }
+
+.projects {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.project-card-box {
+    position: relative;
+    width: 80vw;
+    max-width: 1400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgb(214, 214, 214);
+    box-shadow: 2px 2px 5px #0000004f;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    img {
+        max-width: 400px;
+    }
+}
+
+.project-card-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    h2 {
+        margin-bottom: 0;
+    }
+    .project-date {
+        position: absolute;
+        display: inline-flex;
+        bottom: 2px;
+    }
+}
