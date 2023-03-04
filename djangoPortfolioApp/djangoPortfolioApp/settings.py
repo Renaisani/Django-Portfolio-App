@@ -148,4 +148,4 @@ COMPRESS_PRECOMPILERS = (
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ["django-portfolio-app-production.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["https://django-portfolio-app-production.up.railway.app/"]
