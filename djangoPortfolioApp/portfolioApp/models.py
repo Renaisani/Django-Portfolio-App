@@ -7,7 +7,7 @@ class Projects(models.Model):
     title = models.CharField(max_length=255, unique=True)
     description = models.TextField(max_length=1000, default='')
     created_at = models.DateTimeField(auto_now_add=True)
-    project_image = models.ImageField(upload_to='portfolioApp/static/assets/', null=True)
+    project_image = models.ImageField(upload_to='staticfiles/assets/', null=True)
 
     def __str__(self):
         return self.title
