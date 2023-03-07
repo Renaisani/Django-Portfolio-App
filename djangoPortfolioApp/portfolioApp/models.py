@@ -17,7 +17,7 @@ class Projects(models.Model):
     
 
 class ProjectEntry(models.Model):
-    project_name = models.ForeignKey(Projects, to_field="title", on_delete=models.CASCADE)
+    project_id = models.ForeignKey(Projects, on_delete=models.CASCADE)
     post_title = models.CharField(max_length=255)
     post_date = models.DateTimeField(auto_now_add=True)
     content = models.TextField(max_length=1000, default='')

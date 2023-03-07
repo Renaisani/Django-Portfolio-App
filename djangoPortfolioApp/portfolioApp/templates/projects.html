@@ -4,7 +4,7 @@
     <!-- loop to create each project card from the list of projects -->
     {% for project in projects %}
     <div class="project-card-box">
-        <a href="{% url 'project_page' project_name=project.title %}">  <!-- makes the entire card clickable to go to that project's page -->
+        <a href="{% url 'project_page' project_id=project.id %}">  <!-- makes the entire card clickable to go to that project's page -->
             <div class="project-card">
                 <img src="static/assets/{{project.get_image_name}}" alt="">
                 <div class="project-card-content">

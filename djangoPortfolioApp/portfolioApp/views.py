@@ -9,10 +9,10 @@ def home(request):
     return render(request, "index.html", {"projects": projects_data})
 
 
-def project_page(request, project_name=""):
-    if project_name:
-        project = Projects.objects.get(title=project_name)
-        project_entries = ProjectEntry.objects.filter(project_name=project_name)
+def project_page(request, project_id=None):
+    if project_id:
+        project = Projects.objects.get(pk=project_id)
+        project_entries = ProjectEntry.objects.filter(pk=project_id)
         project_data = {"project": project, "project_entries": project_entries}
     else:
         project = {}
