@@ -12,7 +12,7 @@ def home(request):
 def project_page(request, project_id=None):
     if project_id:
         project = Projects.objects.get(pk=project_id)
-        project_entries = ProjectEntry.objects.filter(pk=project_id)
+        project_entries = ProjectEntry.objects.filter(project_id=project_id)
         project_data = {"project": project, "project_entries": project_entries}
     else:
         project = {}
