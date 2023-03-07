@@ -8,7 +8,11 @@
         <h2>{{project.title}}</h2>
         <img src="{% static 'assets/' %}{{ project.get_image_name }}" alt="Project Photo">
     </div>
-    <p class="project-content">{{project.description}}</p>
+    <div class="project-content">
+        <p class="github-link">Github: <a href="{{project.github_link}}">{{project.github_link}}</a></p>
+        <p class="project-description">{{project.description}}</p>
+    </div>
+    
 </div>
 
 <hr>

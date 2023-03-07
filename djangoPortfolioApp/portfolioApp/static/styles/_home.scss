@@ -107,9 +107,18 @@
 }
 
 .project-content {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     width: 700px;
     margin-top: 65px;
+}
+
+.github-link {
+    margin-top: 0;
+    font-weight: 700;
+    a {
+        color: rgb(106, 106, 129);
+    }
 }
 
 .project-entries {
