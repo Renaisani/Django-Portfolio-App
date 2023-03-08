@@ -4,7 +4,7 @@
 
 <div class="project-box">
     <div class="project-title-section">
-        <p>{{project.created_at.date}}</p>
+        <p>Project Created: {{project.created_at.date}}</p>
         <h2>{{project.title}}</h2>
         <img src="{% static 'assets/' %}{{ project.get_image_name }}" alt="Project Photo">
     </div>
@@ -21,7 +21,7 @@
     {% for project_entry in project_entries %}
     <div class="entry-box">
         <h2>{{project_entry.post_title}}</h2>
-        <p>{{project_entry.post_date.date}}</p>
+        <p>Post Date: {{project_entry.post_date.date}}</p>
         <p>{{project_entry.content}}</p>
     </div>
     {% endfor %}

@@ -64,8 +64,18 @@
     display: flex;
     flex-direction: row;
     img {
-        max-width: 400px;
+        display: inline-flex;
+        position: relative;
+        width: 95%;
     }
+}
+
+.project-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
+    max-width: 450px;
 }
 
 .project-card-content {
@@ -75,6 +85,7 @@
     padding-top: 20px;
     padding-left: 25px;
     padding-right: 25px;
+    min-height: 250px;
     h2 {
         margin-bottom: 0;
     }
