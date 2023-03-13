@@ -1,0 +1,179 @@
+/* line 1, portfolioApp/static/styles/_global.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif; }
+
+/* line 7, portfolioApp/static/styles/_global.scss */
+header {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr; }
+
+/* line 12, portfolioApp/static/styles/_global.scss */
+.title {
+  font-size: 100px;
+  padding-top: 5px;
+  padding-left: 25px;
+  font-weight: 700; }
+
+/* line 19, portfolioApp/static/styles/_global.scss */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; }
+  /* line 30, portfolioApp/static/styles/_global.scss */
+  .nav p {
+    font-size: 25px;
+    display: inline-flex; }
+    /* line 34, portfolioApp/static/styles/_global.scss */
+    .nav p a {
+      text-decoration: none;
+      color: black; }
+
+/* line 3, portfolioApp/static/styles/_home.scss */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 730px; }
+
+/* line 10, portfolioApp/static/styles/_home.scss */
+.home-box {
+  display: flex;
+  flex-direction: row; }
+
+/* line 17, portfolioApp/static/styles/_home.scss */
+.profile-img {
+  width: 500px; }
+
+/* line 21, portfolioApp/static/styles/_home.scss */
+.profile-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 80px; }
+
+/* line 28, portfolioApp/static/styles/_home.scss */
+.text-box {
+  width: 650px;
+  height: 380px; }
+  /* line 31, portfolioApp/static/styles/_home.scss */
+  .text-box p {
+    font-size: 30px;
+    line-height: 3rem; }
+
+/* line 39, portfolioApp/static/styles/_home.scss */
+.projects {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 100vw;
+  padding-top: 30px;
+  margin-bottom: 70px; }
+
+/* line 49, portfolioApp/static/styles/_home.scss */
+.project-card-box {
+  position: relative;
+  width: 80vw;
+  max-width: 1400px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #f8f8f8;
+  box-shadow: 2px 2px 5px #0000004f; }
+  /* line 57, portfolioApp/static/styles/_home.scss */
+  .project-card-box a {
+    text-decoration: none;
+    color: black; }
+
+/* line 63, portfolioApp/static/styles/_home.scss */
+.project-card {
+  display: flex;
+  flex-direction: row; }
+  /* line 66, portfolioApp/static/styles/_home.scss */
+  .project-card img {
+    display: inline-flex;
+    position: relative;
+    width: 95%; }
+
+/* line 73, portfolioApp/static/styles/_home.scss */
+.project-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 400px;
+  max-width: 450px; }
+
+/* line 81, portfolioApp/static/styles/_home.scss */
+.project-card-content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  min-height: 250px; }
+  /* line 89, portfolioApp/static/styles/_home.scss */
+  .project-card-content h2 {
+    margin-bottom: 0; }
+  /* line 92, portfolioApp/static/styles/_home.scss */
+  .project-card-content .project-date {
+    position: absolute;
+    display: inline-flex;
+    bottom: 2px; }
+
+/* line 101, portfolioApp/static/styles/_home.scss */
+.project-box {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 80px; }
+
+/* line 107, portfolioApp/static/styles/_home.scss */
+.project-title-section {
+  margin-left: 50px;
+  margin-right: 40px; }
+  /* line 110, portfolioApp/static/styles/_home.scss */
+  .project-title-section h2 {
+    font-size: 2.2rem;
+    margin-top: 10px; }
+  /* line 114, portfolioApp/static/styles/_home.scss */
+  .project-title-section img {
+    width: 450px;
+    box-shadow: 0 4px 7px #0000004f; }
+
+/* line 120, portfolioApp/static/styles/_home.scss */
+.project-content {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin-top: 65px; }
+
+/* line 127, portfolioApp/static/styles/_home.scss */
+.github-link {
+  margin-top: 0;
+  font-weight: 700; }
+  /* line 130, portfolioApp/static/styles/_home.scss */
+  .github-link a {
+    color: #6a6a81; }
+
+/* line 135, portfolioApp/static/styles/_home.scss */
+.project-entries {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 50px;
+  align-items: center;
+  width: 100vw;
+  padding-top: 30px;
+  margin-bottom: 70px; }
+
+/* line 146, portfolioApp/static/styles/_home.scss */
+.entry-box {
+  width: 80vw;
+  max-width: 1400px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 7px #0000004f;
+  padding-left: 25px;
+  padding-right: 50px;
+  padding-bottom: 20px; }

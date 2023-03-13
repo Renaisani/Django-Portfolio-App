@@ -21,11 +21,11 @@
 </head>
 <body>
     <header>
-        <div class="title">Imani Mwamlima</div>
-        <!-- <div class="nav">
-            <p>Resume</p>
-            <p>Contact</p>
-        </div> -->
+        <div class="title"><a href="{% url 'home' %}">Imani Mwamlima</a></div>
+        <div class="nav">
+            <p><a href="{% static 'assets/Resume.pdf' %}">Resume</a></p>
+            <p><a href="{% url 'contact' %}">Contact</a></p>
+        </div>
     </header>
     <hr>
     {% block content %}{% endblock %}

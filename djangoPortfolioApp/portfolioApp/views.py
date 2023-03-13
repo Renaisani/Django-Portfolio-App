@@ -19,6 +19,10 @@ def project_page(request, project_id=None):
 
     return render(request, "project_page.html", project_data)
 
+def contact(request):
+
+    return render(request, "contact.html")
+
 
 
 def login(request):
