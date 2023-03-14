@@ -1,0 +1,67 @@
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+h1 {
+    display: inline-flex;
+}
+
+.contact-form {
+    width: 1200px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-contents {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .first-name {
+        margin-top: 30px;
+        input {
+            width: 450px;
+        }
+    }
+    .last-name {
+        margin-top: 30px;
+        
+    }
+    .email {
+        margin-top: 30px;
+        input {
+            width: 450px;
+        }
+    }
+    .company {
+        margin-top: 30px;
+        
+    }
+    .message {
+        width: 1008px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        textarea {
+            resize: none;
+        }
+    }
+    div {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

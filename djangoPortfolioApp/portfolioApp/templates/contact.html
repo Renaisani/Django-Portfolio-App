@@ -1,12 +1,39 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="contact-form">
-    <form action="" method="post">
-      {% csrf_token %}
-      {{form.as_p}}
-      <input type="submit" id="button">
-    </form>
-  </div>
+<div class="contact-page">
+    <h1>Contact Me</h1>
+    <div class="contact-form">
+        <form action="" method="post">
+          {% csrf_token %}
+          <div class="form-contents">
+            <div class="first-name">
+                {{form.first_name.label_tag}}
+                {{form.first_name}}
+            </div>
+            <div class="last-name">
+                {{form.last_name.label_tag}}
+                {{form.last_name}}
+            </div>
+            <div class="email">
+                {{form.email.label_tag}}
+                {{form.email}}
+            </div>
+            <div class="company">
+                {{form.company.label_tag}}
+                {{form.company}}
+            </div>
+            <div class="message">
+                {{form.message.label_tag}}
+                {{form.message}}
+            </div>
+          </div>
+          <input type="submit" id="button">
+        </form>
+    </div>
+</div>
+
+
+
 
 {% endblock %}
