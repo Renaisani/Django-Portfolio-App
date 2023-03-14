@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Projects, ProjectEntry
+from .forms import ContactForm
 
 # Create your views here.
 
@@ -21,7 +22,15 @@ def project_page(request, project_id=None):
 
 def contact(request):
 
-    return render(request, "contact.html")
+    form = ContactForm()
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect("home")
+    context = {'form':form}
+
+    return render(request, 'contact.html', context)
 
 
 
