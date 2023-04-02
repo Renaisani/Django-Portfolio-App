@@ -1,5 +1,6 @@
 import os
 from django.db import models
+from django.contrib.postgres.fields import ArrayField
 
 # Create your models here.
 
@@ -9,6 +10,7 @@ class Projects(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     project_image = models.ImageField(upload_to='staticfiles/assets/', null=True)
     github_link = models.CharField(max_length=100, default='')
+    tools = ArrayField(models.CharField(max_length=100), default=list)
 
     def __str__(self):
         return self.title

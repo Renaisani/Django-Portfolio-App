@@ -23,7 +23,8 @@
     <header>
         <div class="title"><a href="{% url 'home' %}">Imani Mwamlima</a></div>
         <div class="nav">
-            <p><a href="{% static 'assets/Resume.pdf' %}">Resume</a></p>
+            <p><a href="{% url 'home' %}">Home</a></p>
+            <p><a href="{% static 'assets/Resume.pdf' %}" target="_blank" rel="noreferrer noopener">Resume</a></p>
             <p><a href="{% url 'contact' %}">Contact</a></p>
         </div>
     </header>

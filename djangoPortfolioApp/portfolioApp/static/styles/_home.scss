@@ -36,6 +36,15 @@
 
 
 //////////// Project Section //////////////
+.projects-header {
+    display: flex;
+    justify-content: center;
+    h2 {
+        margin-top: 50px;
+        font-size: 2.5rem;
+    }
+}
+
 .projects {
     position: relative;
     display: flex;
@@ -89,11 +98,14 @@
     h2 {
         margin-bottom: 0;
     }
-    .project-date {
-        position: absolute;
-        display: inline-flex;
-        bottom: 2px;
+    .project-tools-card {
+        font-size: 1.1rem;
     }
+    // .project-date {
+    //     position: absolute;
+    //     display: inline-flex;
+    //     bottom: 2px;
+    // }
 }
 
 

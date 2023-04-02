@@ -7,15 +7,28 @@
         <p>Project Created: {{project.created_at.date}}</p>
         <h2>{{project.title}}</h2>
         <img src="{% static 'assets/' %}{{ project.get_image_name }}" alt="Project Photo">
+        <p class="project-tools">Tools: 
+            {% for tool in project.tools %}
+            {% if forloop.last %}
+                <b>{{tool}}</b>
+            {% else %}
+                <b>{{tool}}, </b>
+            {% endif %}
+            {% endfor %}
+        </p>
     </div>
     <div class="project-content">
-        <p class="github-link">Github: <a href="{{project.github_link}}">{{project.github_link}}</a></p>
+        <p class="github-link">Github: <a href="{{project.github_link}}" target="_blank" rel="noreferrer noopener">{{project.github_link}}</a></p>
         <p class="project-description">{{project.description}}</p>
     </div>
     
 </div>
 
 <hr>
+
+<div class="project-entry-header">
+    <h2>Latest Updates</h2>
+</div>
 
 <div class="project-entries">
     {% for project_entry in project_entries %}
